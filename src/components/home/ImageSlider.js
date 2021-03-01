@@ -1,28 +1,29 @@
-import React from 'react';
-import Carousel from 'react-material-ui-carousel'
-import Item from './SliderItem';
+import React from "react";
+import Carousel from "react-material-ui-carousel";
+import Item from "./SliderItem";
 
 const ImageSlider = (props) => {
+  const items = [
+    {
+      name: "Japan",
+      description: "30 days 15GB Data package as low as US$0.62/day ",
+    },
+    {
+      name: "Singapore",
+      description: "Data package as low as US$0.53/day",
+    },
+    {
+      name: "Vietnam",
+      description: "Data package as low as US$0.673/day",
+    },
+  ];
 
-    var items = [
-        {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!"
-        },
-        {
-            name: "Random Name #2",
-            description: "Hello World!"
-        }
-    ]
-
-    return (
-        <Carousel
-        fullHeightHover= {false}
-        >
-            {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
-    )
+  return (
+    <Carousel fullHeightHover={false}>
+      {items.map((item, i) => (
+        <Item key={i} item={item} />
+      ))}
+    </Carousel>
+  );
 };
 export default ImageSlider;

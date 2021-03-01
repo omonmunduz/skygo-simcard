@@ -1,0 +1,13 @@
+.usage-policy {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding-top: 20px;
+  margin-bottom: 250px;
+}
+.usage-policy > h1 {
+  padding: 15px;
+}
+.desc {
+  line-height: 1.5rem;
+}

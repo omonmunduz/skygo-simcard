@@ -1,0 +1,51 @@
+.how-to {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+.how-to > h1 {
+  font-weight: bolder;
+  color: #fe5e1f;
+  padding: 5px;
+}
+.how-to-purchase-image {
+  max-width: 80%;
+}
+.how-to-purchase {
+  margin-top: 12px;
+  padding: 12px;
+}
+.how-to-purchase-box {
+  padding: 12px;
+}
+
+.how-to-purchase-title {
+  color: #474fea;
+}
+.compatible-devices {
+  padding: 12px;
+}
+.for-ios {
+  padding: 20px;
+}
+.for-ios-img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ios-img {
+  width: 250px;
+}
+
+@media only screen and (min-width: 900px) {
+  .how-to-purchase {
+    display: flex;
+  }
+  .for-ios {
+    display: flex;
+  }
+  .for-ios-text {
+    width: 30%;
+  }
+}

@@ -1,0 +1,33 @@
+.homestore {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 13px;
+}
+
+.select-region {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 7px;
+    background-color: #400CCC;
+    border-radius: 5px;
+}
+.region {
+    color: #fff;
+    padding: 10px;
+    background-color: #fe5e1f;
+    border-radius: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+.selected-region-and-countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (min-width: 600px) {
+    .select-region {
+        flex-direction: row;
+    }
+}

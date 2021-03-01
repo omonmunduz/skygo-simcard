@@ -1,0 +1,29 @@
+.internet {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 13px;
+}
+.internet > h2 {
+  font-weight: bolder;
+  color: #fe5e1f;
+  padding: 5px;
+}
+.how-to-add-sim {
+  margin-top: 100px;
+}
+.add-sim-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-sim-img-box img {
+  width: 350px;
+}
+@media only screen and (min-width: 900px) {
+  .add-sim-img-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
