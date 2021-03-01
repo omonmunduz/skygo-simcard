@@ -42,7 +42,7 @@ const CountryCard = (props) =>  {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Learn More
+          <Link to={`/${props.item.country}`}>Learn More</Link>
         </Button>
       </CardActions>
     </Card>

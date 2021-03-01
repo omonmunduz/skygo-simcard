@@ -10,6 +10,8 @@ import SignUp from "./pages/sign-up/SignUp";
 import Terms from "./pages/terms/Terms";
 import Usage from "./pages/usage/Usage";
 import Privacy from "./pages/privacy/Privacy";
+import SelectedCountry from './pages/selectedCountry/SelectedCountry';
+import SelectedPackage from './pages/selectedPackage/SelectedPackage';
 import Footer from "./components/shared/Footer";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Terms path="/terms-and-conditions" />
         <Usage path="/usage-policy" />
         <Privacy path="/privacy-policy" />
+        <SelectedCountry path="/:countryName" />
+        <SelectedPackage path="/:countryName/:selectedPackage" />
       </Router>
       <Footer />
     </div>
