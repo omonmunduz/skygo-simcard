@@ -15,8 +15,8 @@ import "./Nav.css";
 
 const headersData = [
   {
-    label: "Home",
-    href: "/",
+    label: "Store",
+    href: "/store",
   },
   {
     label: "Add Sim",
@@ -147,7 +147,7 @@ const Nav = () => {
   };
   const skygoLogo = (
     <Typography variant="h6" component="h1" className={logo}>
-      SkyGo
+      <Link to="/">SkyGo</Link>
     </Typography>
   );
 

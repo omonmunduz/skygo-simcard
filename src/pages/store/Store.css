@@ -1,0 +1,12 @@
+.store {
+    min-height: 90vh;
+    padding: 15px;
+}
+.store-banner{
+    width: 100%;
+    background-color:#133C55 ;
+    padding: 15px;
+}
+#store-title {
+    color: #fff;
+}

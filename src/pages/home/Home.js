@@ -1,12 +1,13 @@
 import React from "react";
-import ImageSlider from "../../components/home/ImageSlider";
 import HomeStore from '../../components/home/HomeStore';
+import Hero from '../../components/home/Hero';
+import VerticalTabs from '../../components/home/VerticalTabs';
 
 const Home = () => {
   return (
     <>
-    <ImageSlider />
-    <HomeStore />
+    <Hero />
+    <VerticalTabs />
     </>
   )
 };

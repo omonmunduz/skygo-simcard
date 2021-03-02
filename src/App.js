@@ -2,6 +2,7 @@ import Nav from "./components/shared/Nav";
 import "./App.css";
 import { Router } from "@reach/router";
 import Home from "./pages/home/Home";
+import Store from './pages/store/Store';
 import AddSim from "./pages/add-sim/AddSim";
 import HowTo from "./pages/howTo/HowTo";
 import Faq from "./pages/faq/Faq";
@@ -20,6 +21,7 @@ function App() {
       <Nav />
       <Router>
         <Home path="/" />
+        <Store path="/store" />
         <AddSim path="/add-sim" />
         <HowTo path="/how-to" />
         <Faq path="/faq" />
