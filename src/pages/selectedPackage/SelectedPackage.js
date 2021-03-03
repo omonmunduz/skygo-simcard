@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { useSelector } from 'react-redux';
 import { useParams} from '@reach/router';
 import { Link } from '@reach/router';
@@ -15,7 +15,18 @@ const SelectedPackage = () => {
     const findSelectedCountry = packages.find(item => item.country === selectedCountry)
     const findSelectedPackage = findSelectedCountry.package.find(item => item.name === selected)
 
+    // const [total, setTotal] = useState(findSelectedPackage.price);
+    const [quantity, setQuantity ] = useState(1)
+    let total = findSelectedPackage.price * quantity
 
+    const decrement = () => {
+        if(quantity > 1){
+            setQuantity(quantity - 1)
+        }
+    }
+    const increment = () => {
+        setQuantity(quantity + 1)
+    }
 
 
     return <section className="selected-package">
@@ -26,7 +37,7 @@ const SelectedPackage = () => {
             <div className="package-name-add-price">
                 <h4 className="package-name">{`${findSelectedPackage.name} ${findSelectedCountry.remarks}`}</h4>
                 <div className="select-quantity">
-                <button>-</button><h5>1</h5><button>+</button>
+                <button onClick={() => decrement()}>-</button><h5>{quantity}</h5><button onClick={() => increment()}>+</button>
                 </div>
                 <div className="usage-guidelines">
                     <h5>Package Usage Guidelines</h5>
@@ -37,7 +48,7 @@ const SelectedPackage = () => {
             </div>
 
             <div className="package-description">
-                <h2 id="total-cost">Total: US${findSelectedPackage.price}</h2>
+                <h2 id="total-cost">Total: US${total.toFixed(2)}</h2>
                 <h5>Package Description</h5>
                 <p>Applicable areas: {selectedCountry}</p>
                 <ul>

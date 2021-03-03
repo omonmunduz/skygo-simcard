@@ -318,7 +318,7 @@ export const packagesSlice = createSlice({
           { name: "Multi regional 30 days", price: 55.9, id: 7 },
         ],
         remarks: [
-          "Extend coverage to Fiji, Pakistan, Papua New Guinea, Tonga Vanuatu UAE300MB per day, then FUP",
+          "300MB per day, then FUP",
         ],
     
       },
@@ -336,7 +336,7 @@ export const packagesSlice = createSlice({
           { name: "Multi regional 30 days", price: 57.2, id: 7 },
         ],
         remarks:
-          "Extend coverage to Fiji, Pakistan, Papua New Guinea, Tonga Vanuatu UAE300MB per day, then FUP",
+          "300MB per day, then FUP",
     
       },
     ],

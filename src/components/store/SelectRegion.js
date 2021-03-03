@@ -1,4 +1,5 @@
 import React from 'react';
+import SupportedCountriesEurope from './SupportedCountriesEurope';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectRegion } from '../../features/packages/packagesSlice';
 
@@ -52,7 +53,11 @@ const SelectRegion = () => {
           <MenuItem value={'Global'}>Global</MenuItem>
         </Select>
       </FormControl>
+      <div className="supp">
+        {region === 'Europe' ? <SupportedCountriesEurope /> : <h2>{region}</h2>}
+      </div>
     </div>
+
   );
 }
 export default SelectRegion;
