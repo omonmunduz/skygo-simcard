@@ -5,7 +5,7 @@
 }
 .intro-box {
     width: 70%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 70px auto;
     display: flex;
     flex-direction: column;
