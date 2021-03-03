@@ -1,12 +1,13 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectRegion } from '../../features/packages/packagesSlice';
+
+
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-
-import { useSelector, useDispatch } from 'react-redux';
-import { selectRegion } from '../../features/packages/packagesSlice';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -21,9 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 /// COMPONENT STARTS HERE  ************
 const SelectRegion = () => {
-    const selectedReg = useSelector((state) => state.packages.chosenRegion);
-
-
+  const selectedReg = useSelector((state) => state.packages.chosenRegion);
   const classes = useStyles();
   const [region, setRegion] = React.useState(selectedReg);
   const dispatch = useDispatch();

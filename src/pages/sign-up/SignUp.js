@@ -34,6 +34,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+/// COMPONENT STARTS HERE  ************
 export default function SignUp() {
   const classes = useStyles();
 

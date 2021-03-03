@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { useParams} from '@reach/router';
 import { Link } from '@reach/router';
 import "./SelectedCountry.css";
-import { Button, Box } from '@material-ui/core';
+
 
 import SelectedBanner from '../../components/shared/SelectedBanner';
 
@@ -24,14 +24,10 @@ const SelectedCountry = (props) => {
             <div className="data-packages">
                 {selectedCountry.package.map(item => {
                     return <Link to={`/store/${selected}/${item.name}`} key={item.id}>
-                        <Box mt={2} p={2}>
-                            <Button variant="contained" color="primary" size="large">
-                                
+                                <div className="package-container">
                                     <p className="data-desc">{`${item.name}  ${selectedCountry.remarks}`}</p>
                                     <p className="data-desc">US${item.price}</p>
-                                
-                                    </Button>
-                                    </Box>
+                                </div>
                         </Link>
                 })}
             </div>

@@ -12,9 +12,7 @@ const SelectedCountries = () => {
             return (
                 <Link to={`/store/${item.country}`} key={item.id}>
                     <div className="country-item">
-                        <div className="country-item-text">
                         <p>{item.country}</p>
-                        </div>
                     </div>
                 </Link>
             )
