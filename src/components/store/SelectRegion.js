@@ -29,8 +29,7 @@ const SelectRegion = () => {
 
   const handleChange = (event) => {
     setRegion(event.target.value);
-    dispatch(selectRegion(region))
-    console.log(dispatch(selectRegion(region)), 'this is it!!!')
+    dispatch(selectRegion(event.target.value))
   };
 
   return (
