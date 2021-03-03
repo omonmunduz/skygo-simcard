@@ -1,5 +1,7 @@
 import React from 'react';
 import { useSelector} from 'react-redux';
+import { Link } from '@reach/router';
+import './SelectedCountries.css';
 
 
 
@@ -8,7 +10,13 @@ const SelectedCountries = () => {
     return <div id ="selected-region-results">
         {selectedCountries.map(item => {
             return (
-                <div>{item.country}</div>
+                <Link to={`/store/${item.country}`} key={item.id}>
+                    <div className="country-item">
+                        <div className="country-item-text">
+                        <p>{item.country}</p>
+                        </div>
+                    </div>
+                </Link>
             )
         })}
     </div>

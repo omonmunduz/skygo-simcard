@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import SelectRegion from '../../components/store/SelectRegion';
 import SelectedCountries from '../../components/store/SelectedCountries';
 import './Store.css' 
@@ -6,7 +6,7 @@ import './Store.css'
 const Store = () => {
     return <section className="store">
         <div className="store-banner">
-            <h3 id="store-title">Select Country</h3>
+            <h2 id="store-title">Select Desired Region and Country</h2>
         </div>
        <SelectRegion />
        <SelectedCountries />

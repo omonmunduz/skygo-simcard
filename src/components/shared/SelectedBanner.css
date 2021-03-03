@@ -1,7 +1,4 @@
-.store {
-    min-height: 90vh;
-}
-.store-banner{
+.selected-banner {
     width: 100%;
     height: 300px;
     background-color:#133C55;
@@ -10,6 +7,6 @@
     justify-content: center;
     align-items: center;
 }
-#store-title {
-    color: #fff;
+.selected-banner > h2 {
+    color: #fff ;
 }

@@ -30,8 +30,8 @@ function App() {
         <Terms path="/terms-and-conditions" />
         <Usage path="/usage-policy" />
         <Privacy path="/privacy-policy" />
-        <SelectedCountry path="/:countryName" />
-        <SelectedPackage path="/:countryName/:selectedPackage" />
+        <SelectedCountry path="/store/:countryName" />
+        <SelectedPackage path="/store/:countryName/:selectedPackage" />
       </Router>
       <Footer />
     </div>
