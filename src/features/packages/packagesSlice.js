@@ -266,12 +266,12 @@ export const packagesSlice = createSlice({
         region: "North America",
         country: "USA|Canada",
         package: [
-          { name: "USA/Canada 5 Days", price: 13.3, id: 1 },
-          { name: "USA/Canada 7 Days", price: 19.1, id: 2 },
-          { name: "USA/Canada 10 Days ", price: 23.2, id: 3 },
-          { name: "USA/Canada 15 Days", price: 24.8, id: 4 },
-          { name: "USA/Canada 20 Days", price: 32.6, id: 5 },
-          { name: "USA/Canada 30 Days", price: 46.2, id: 6 },
+          { name: "USA | Canada 5 Days", price: 13.3, id: 1 },
+          { name: "USA | Canada 7 Days", price: 19.1, id: 2 },
+          { name: "USA | Canada 10 Days ", price: 23.2, id: 3 },
+          { name: "USA | Canada 15 Days", price: 24.8, id: 4 },
+          { name: "USA | Canada 20 Days", price: 32.6, id: 5 },
+          { name: "USA | Canada 30 Days", price: 46.2, id: 6 },
         ],
         remarks: "",
    
@@ -306,7 +306,7 @@ export const packagesSlice = createSlice({
       },
       {
         id: 22,
-        region: "All",
+        region: "Global",
         country: "Multi regional(exclude China)",
         package: [
           { name: "Multi regional 1 day", price: 3.6, id: 1 },
@@ -324,7 +324,7 @@ export const packagesSlice = createSlice({
       },
       {
         id: 23,
-        region: "All",
+        region: "Global",
         country: "Multi regional(include China)",
         package: [
           { name: "Multi regional 1 day", price: 4.0, id: 1 },
@@ -569,11 +569,12 @@ export const packagesSlice = createSlice({
     }],
     chosenPackage:'',
     totalPrice: 0,
+    quantity: 1
   },
   reducers: {
     selectRegion: (state, action) => {
       state.chosenRegion = action.payload;
-      state.chosenCountries = state.regions.filter(item => item.region === state.chosenRegion)
+      state.chosenCountries = state.regions.filter(item => item.region === action.payload)
     }
   }
 });

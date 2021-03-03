@@ -20,6 +20,7 @@
     margin: 15px;
 }
 .country-item:hover {
+    background-color: #400ccc;
     box-shadow: -4px 8px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -4px 8px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 8px 5px 0px rgba(0,0,0,0.75);

@@ -20,13 +20,13 @@ const SelectedCountry = (props) => {
       </SelectedBanner>
 
       <section className="selected-country">
-            
+            <h2 id="select-package-title">Select Desired Package</h2>
             <div className="data-packages">
                 {selectedCountry.package.map(item => {
                     return <Link to={`/store/${selected}/${item.name}`} key={item.id}>
                                 <div className="package-container">
                                     <p className="data-desc">{`${item.name}  ${selectedCountry.remarks}`}</p>
-                                    <p className="data-desc">US${item.price}</p>
+                                    <p className="data-desc-price">US${item.price}</p>
                                 </div>
                         </Link>
                 })}
