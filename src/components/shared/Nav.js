@@ -15,6 +15,10 @@ import "./Nav.css";
 
 const headersData = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Store",
     href: "/store",
   },
@@ -48,7 +52,7 @@ const useStyles = makeStyles(() => ({
   logo: {
     fontFamily: "Work Sans, sans-serif",
     fontWeight: 600,
-    color: "#FFFEFE",
+    color: "#fff",
     textAlign: "left",
   },
   menuButton: {
