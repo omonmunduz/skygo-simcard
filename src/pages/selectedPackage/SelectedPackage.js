@@ -9,6 +9,8 @@ import './SelectedPackage.css';
 
 const SelectedPackage = () => {
     const packages = useSelector( state => state.packages.regions);
+    const simCard = useSelector( state => state.packages.simCard.simNum);
+    console.log(simCard)
     const params = useParams();
     const selected = params.selectedPackage;
     const selectedCountry = params.countryName;

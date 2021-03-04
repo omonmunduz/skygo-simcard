@@ -31,10 +31,6 @@ const headersData = [
     href: "/how-to",
   },
   {
-    label: "FAQ",
-    href: "/faq",
-  },
-  {
     label: "Sign In",
     href: "/sign-in",
   },
