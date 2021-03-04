@@ -7,7 +7,8 @@ import './Hero.css';
 
 
 const Hero = () => {
-    return <section id="hero">
+    return <>
+    <section id="hero">
         <img src={speedTest} alt="speed test" id="speedtest" />
         <div className="hero-items">
         <div className="hero-content">
@@ -34,5 +35,7 @@ const Hero = () => {
       </div>
         </div>
     </section>
+    <div id="skewed"></div>
+    </>
 };
 export default Hero;

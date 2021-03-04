@@ -1,7 +1,6 @@
 .home-intro-section {
     width: 100%;
     min-height: 80vh;
-    padding: 13px;
 }
 .intro-box {
     width: 70%;
@@ -14,6 +13,9 @@
 }
 .intro-box-img {
     width: 200px;
+}
+.intro-box-para {
+    font-size: 1.2rem;
 }
 @media only screen and (min-width: 500px){
     .intro-box {

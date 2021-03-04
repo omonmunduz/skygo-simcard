@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from '@reach/router';
 import './HomeLanding.css';
 import addSimcard from './images/add-simcard.svg';
 import choose from './images/choose.svg';
@@ -12,12 +12,14 @@ const HomeLanding = () => {
         <div className="intro-box">
             <img src={addSimcard} alt="Add SIM card" className="intro-box-img"/>
             <div className="intro-box-text">
-                <h2>Add SIM</h2>
+                <h3>Add SIM</h3>
+                <p className="intro-box-para">Add you SIM number in order to<br/>purchase a data pacakge<br/><Link to="/add-sim">Add SIM</Link></p>
             </div>
         </div>
         <div className="intro-box">
         <div className="intro-box-text">
-                <h2>Select Desired Region and Country</h2>
+                <h3>Select Desired Region and Country</h3>
+                <p className="intro-box-para">After adding you SIM number <br/> go to <Link to="/store">Store</Link> page where you can select you region </p>
             </div>
             <img src={destination} alt="Destination" className="intro-box-img"/>
         </div>
