@@ -1,20 +1,48 @@
-import Nav from "./components/shared/Nav";
-import "./App.css";
+import React from 'react';
 import { Router } from "@reach/router";
+import Loadable from 'react-loadable';
+import Nav from "./components/shared/Nav";
 import Home from "./pages/home/Home";
-import Store from './pages/store/Store';
-import AddSim from "./pages/add-sim/AddSim";
-import HowTo from "./pages/howTo/HowTo";
-import Faq from "./pages/faq/Faq";
-import SignIn from "./pages/sign-in/SignIn";
-import SignUp from "./pages/sign-up/SignUp";
 import Terms from "./pages/terms/Terms";
 import Usage from "./pages/usage/Usage";
 import Privacy from "./pages/privacy/Privacy";
-import SelectedCountry from './pages/selectedCountry/SelectedCountry';
-import SelectedPackage from './pages/selectedPackage/SelectedPackage';
 import Contact from './pages/contact/Contact';
+import Loading from './components/shared/Loading';
 import Footer from "./components/shared/Footer";
+import "./App.css";
+
+const AsyncStore = Loadable({
+  loader: () => import('./pages/store/Store'),
+  loading: Loading
+});
+const AsyncAddSim = Loadable({
+  loader: () => import("./pages/add-sim/AddSim"),
+  loading: Loading
+});
+const AsyncHowTo = Loadable({
+  loader: () => import("./pages/howTo/HowTo"),
+  loading: Loading
+});
+const AsyncFaq = Loadable({
+  loader: () => import("./pages/faq/Faq"),
+  loading: Loading
+});
+const AsyncSignIn = Loadable({
+  loader: () => import("./pages/sign-in/SignIn"),
+  loading: Loading
+});
+const AsyncSignUp = Loadable({
+  loader: () => import("./pages/sign-up/SignUp"),
+  loading: Loading
+})
+const AsyncSelectedCountry = Loadable({
+  loader: () => import('./pages/selectedCountry/SelectedCountry'),
+  loading: Loading
+});
+const AsyncSelectedPackage = Loadable({
+  loader: () => import('./pages/selectedPackage/SelectedPackage'),
+  loading: Loading
+});
 
 function App() {
   return (
@@ -22,18 +50,19 @@ function App() {
       <Nav />
       <Router>
         <Home path="/" />
-        <Store path="/store" />
-        <AddSim path="/add-sim" />
-        <HowTo path="/how-to" />
-        <Faq path="/faq" />
-        <SignIn path="/sign-in" />
-        <SignUp path="/sign-up" />
+        <AsyncStore path="/store" />
+        <AsyncAddSim path="/add-sim" />
+        <AsyncHowTo path="/how-to" />
+        <AsyncFaq path="/faq" />
+        <AsyncSignIn path="/sign-in" />
+        <AsyncSignUp path="/sign-up" />
         <Terms path="/terms-and-conditions" />
         <Usage path="/usage-policy" />
         <Privacy path="/privacy-policy" />
         <Contact path="/contact-us" />
-        <SelectedCountry path="/store/:countryName" />
-        <SelectedPackage path="/store/:countryName/:selectedPackage" />
+        <Loading path="/loading" />
+        <AsyncSelectedCountry path="/store/:countryName" />
+        <AsyncSelectedPackage path="/store/:countryName/:selectedPackage" />
       </Router>
       <Footer />
     </div>
