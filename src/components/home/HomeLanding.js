@@ -17,7 +17,7 @@ const HomeLanding = () => {
                  consectetur adipiscing elit. Duis finibus at tellus vel ullamcorper. 
                  Maecenas vulputate ut diam ac cursus. Class aptent taciti sociosqu ad litora
                   torquent per conubia nostra, per inceptos himenaeos. Sed tellus arcu, porta sed consectetur ut,
-                   interdum at lacus<Link to="/add-sim">Add SIM</Link></p>
+                   interdum at lacus<Link to="/add-sim"> Add SIM</Link></p>
             </div>
         </div>
         <div className="intro-box">
@@ -27,8 +27,8 @@ const HomeLanding = () => {
                  page where you can select you region
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Duis finibus at tellus vel ullamcorper. Maecenas vulputate ut diam ac cursus. 
-                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                  Sed tellus arcu, porta sed consectetur ut, interdum at lacus </p>
+                 Class aptent taciti sociosqu ad litora torquent per conubia <Link to="/store">Store</Link>
+                   </p>
             </div>
             <img src={destination} alt="Destination" className="intro-box-img"/>
         </div>

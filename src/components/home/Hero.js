@@ -2,14 +2,12 @@ import React from 'react';
 import { Link } from '@reach/router';
 import { Button } from "@material-ui/core";
 import Slider from './Slider';
-import speedTest from '../../assets/speedtest.svg';
 import './Hero.css';
 
 
 const Hero = () => {
-    return <>
+    return (
     <section id="hero">
-        <img src={speedTest} alt="speed test" id="speedtest" />
         <div className="hero-items">
         <div className="hero-content">
             <div className="hero--content-text">
@@ -35,7 +33,6 @@ const Hero = () => {
       </div>
         </div>
     </section>
-    <div id="skewed"></div>
-    </>
+    )
 };
 export default Hero;
