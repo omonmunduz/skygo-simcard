@@ -223,12 +223,12 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Cambodia 3 Days", price: 4.2, id: 1 },
           { name: "Cambodia 4 Days", price: 5.5, id: 2 },
-          { name: "Cambodia 5 Days ", price: 6.6, id: 3 },
+          { name: "Cambodia 5 Days", price: 6.6, id: 3 },
           { name: "Cambodia 6 Days", price: 7.9, id: 4 },
           { name: "Cambodia 7 Days", price: 9.2, id: 5 },
           { name: "Cambodia 10 Days", price: 13.2, id: 6 },
         ],
-       
+       remarks: 'Unlimited Data(500MB/day high speed)'
       },
       {
         id: 16,
@@ -242,7 +242,7 @@ export const packagesSlice = createSlice({
           { name: "Europe 20 Days", price: 21.5, id: 5 },
           { name: "Europe 30 Days", price: 26.9, id: 6 },
         ],
-        remarks: "",
+        remarks: "Unlimited Data(500MB/day high speed)",
 
       },
       {
@@ -273,7 +273,7 @@ export const packagesSlice = createSlice({
           { name: "USA | Canada 20 Days", price: 32.6, id: 5 },
           { name: "USA | Canada 30 Days", price: 46.2, id: 6 },
         ],
-        remarks: "",
+        remarks: "Unlimited Data(500MB/day high speed)",
    
       },
       {
@@ -287,7 +287,7 @@ export const packagesSlice = createSlice({
           { name: "Australia 15 Days", price: 19.7, id: 4 },
           { name: "Australia 20 Days", price: 26.9, id: 5 },
         ],
-        remarks: "",
+        remarks: "Unlimited Data(500MB/day high speed)",
  
       },
       {
@@ -301,7 +301,7 @@ export const packagesSlice = createSlice({
           { name: "New Zealand 15 Days", price: 24.1, id: 4 },
           { name: "New Zealand 20 Days", price: 32.3, id: 5 },
         ],
-        remarks: "",
+        remarks: "Unlimited Data(500MB/day high speed)",
       
       },
       {
