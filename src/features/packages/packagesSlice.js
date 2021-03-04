@@ -567,16 +567,23 @@ export const packagesSlice = createSlice({
       ],
       remarks: 'Unlimited Data(500MB/day high speed)'
     }],
-    chosenPackage:'',
+    simCard:{
+      simNum:0,
+      simCode:0
+    }
   },
   reducers: {
     selectRegion: (state, action) => {
       state.chosenRegion = action.payload;
       state.chosenCountries = state.regions.filter(item => item.region === action.payload)
+    },
+    submitCard: (state, action) => {
+      state.simCard.simNum = action.payload.simCardNum;
+      state.simCard.simCode = action.payload.simCardCode;
     }
   }
 });
 
-export const { selectRegion } = packagesSlice.actions;
+export const { selectRegion, submitCard } = packagesSlice.actions;
 
 export default packagesSlice.reducer;

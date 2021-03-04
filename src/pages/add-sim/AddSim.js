@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
+import { useDispatch } from 'react-redux';
+import { submitCard } from '../../features/packages/packagesSlice';
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -20,19 +22,45 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const AddSim = () => {
+  const [simNum, setSimNum] = useState(null);
+  const [simCode, setSimCde] = useState(null);
+  const dispatch = useDispatch();
   const classes = useStyles();
+  
+
+  const handleSimNum = (e) => {
+    setSimNum(e.target.value)
+  }
+  const handleSimCode = (e) => {
+    setSimCde(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+      const data = {
+        simCardNum: simNum,
+        simCardCode: simCode
+      };
+      dispatch(submitCard(data))
+      console.log(data)
+    
+  }
 
   return (
     <section className="internet">
       <h2>Add SIM Card</h2>
-      <form className={classes.root} noValidate autoComplete="off">
+      <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit}>
         <TextField
           id="standard-basic"
+          type="number"
           label="Please add the last 13 digits of the card number"
+          onChange={handleSimNum}
         />
         <TextField
           id="filled-basic"
+          type="number"
           label="Please fill in the 4-digit verification code"
+          onChange={handleSimCode}
         />
         <FormControlLabel
           value="end"
@@ -40,7 +68,7 @@ const AddSim = () => {
           label="I have read and agreed with user agreement"
           labelPlacement="end"
         />
-        <Button variant="contained" color="primary">
+        <Button variant="contained" color="primary" onClick={handleSubmit}>
           Add SIM &rarr;
         </Button>
       </form>

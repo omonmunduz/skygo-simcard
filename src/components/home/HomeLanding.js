@@ -22,7 +22,7 @@ const HomeLanding = () => {
             <Link to="/add-sim" className="learn-more">Learn more about how to ADD SIM</Link>
         </div>
         <div className="intro-box">
-        <span className="order">1</span>
+        <span className="order">2</span>
         <img src={destination} alt="Destination" className="intro-box-img"/>
         <div className="intro-box-text">
                 <h4>Select Desired Region and Country</h4>

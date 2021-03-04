@@ -1,9 +1,12 @@
 .usage-policy {
   width: 90%;
   max-width: 800px;
+  min-height: 80vh;
   margin: 1rem auto;
   padding-top: 20px;
-  margin-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .usage-policy > h1 {
   padding: 15px;
