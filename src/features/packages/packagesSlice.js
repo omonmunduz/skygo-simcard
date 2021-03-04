@@ -133,7 +133,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Malaysia 3 Days", price: 2.8, id: 1 },
           { name: "Malaysia 4 Days", price: 3.2, id: 2 },
-          { name: "Malaysia 5 Days ", price: 4.1, id: 3 },
+          { name: "Malaysia 5 Days", price: 4.1, id: 3 },
           { name: "Malaysia 6 Days", price: 4.8, id: 4 },
           { name: "Malaysia 7 Days", price: 5.8, id: 5 },
           { name: "Malaysia 10 Days", price: 8.0, id: 6 },
@@ -149,7 +149,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Thailand 3 Days", price: 2.8, id: 1 },
           { name: "Thailand 4 Days", price: 3.2, id: 2 },
-          { name: "Thailand 5 Days ", price: 3.8, id: 3 },
+          { name: "Thailand 5 Days", price: 3.8, id: 3 },
           { name: "Thailand 6 Days", price: 4.3, id: 4 },
           { name: "Thailand 7 Days", price: 4.7, id: 5 },
           { name: "Thailand 10 Days", price: 6.4, id: 6 },
@@ -165,7 +165,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Singapore|Malaysia|Thailand 3 Days", price: 3.0, id: 1 },
           { name: "Singapore|Malaysia|Thailand 4 Days", price: 3.6, id: 2 },
-          { name: "Singapore|Malaysia|Thailand 5 Days ", price: 4.7, id: 3 },
+          { name: "Singapore|Malaysia|Thailand 5 Days", price: 4.7, id: 3 },
           { name: "Singapore|Malaysia|Thailand 6 Days", price: 5.5, id: 4 },
           { name: "Singapore|Malaysia|Thailand 7 Days", price: 6.5, id: 5 },
           { name: "Singapore|Malaysia|Thailand 10 Days", price: 9.0, id: 6 },
@@ -180,7 +180,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Myanmar 3 Days", price: 7.6, id: 1 },
           { name: "Myanmar 4 Days", price: 9.5, id: 2 },
-          { name: "Myanmar 5 Days ", price: 10.9, id: 3 },
+          { name: "Myanmar 5 Days", price: 10.9, id: 3 },
           { name: "Myanmar 6 Days", price: 12.0, id: 4 },
           { name: "Myanmar 7 Days", price: 12.7, id: 5 },
           { name: "Myanmar 10 Days", price: 17.3, id: 6 },
@@ -194,7 +194,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Indonesia 3 Days", price: 4.1, id: 1 },
           { name: "Indonesia 4 Days", price: 4.8, id: 2 },
-          { name: "Indonesia 5 Days ", price: 5.4, id: 3 },
+          { name: "Indonesia 5 Days", price: 5.4, id: 3 },
           { name: "Indonesia 6 Days", price: 6.5, id: 4 },
           { name: "Indonesia 7 Days", price: 7.6, id: 5 },
           { name: "Indonesia 10 Days", price: 10.8, id: 6 },
@@ -208,7 +208,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Vietnam 3 Days", price: 2.9, id: 1 },
           { name: "Vietnam 4 Days", price: 3.2, id: 2 },
-          { name: "Vietnam 5 Days ", price: 4.1, id: 3 },
+          { name: "Vietnam 5 Days", price: 4.1, id: 3 },
           { name: "Vietnam 6 Days", price: 4.8, id: 4 },
           { name: "Vietnam 7 Days", price: 5.8, id: 5 },
           { name: "Vietnam 10 Days", price: 8.0, id: 6 },
@@ -237,7 +237,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Europe 5 Days", price: 8.0, id: 1 },
           { name: "Europe 7 Days", price: 10.1, id: 2 },
-          { name: "Europe 10 Days ", price: 12.8, id: 3 },
+          { name: "Europe 10 Days", price: 12.8, id: 3 },
           { name: "Europe 15 Days", price: 16.1, id: 4 },
           { name: "Europe 20 Days", price: 21.5, id: 5 },
           { name: "Europe 30 Days", price: 26.9, id: 6 },
@@ -252,7 +252,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "USA 5 Days", price: 12.1, id: 1 },
           { name: "USA 7 Days", price: 17.4, id: 2 },
-          { name: "USA 10 Days ", price: 21.0, id: 3 },
+          { name: "USA 10 Days", price: 21.0, id: 3 },
           { name: "USA 15 Days", price: 22.6, id: 4 },
           { name: "USA 20 Days", price: 29.8, id: 5 },
           { name: "USA 30 Days", price: 42.0, id: 6 },
@@ -268,7 +268,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "USA | Canada 5 Days", price: 13.3, id: 1 },
           { name: "USA | Canada 7 Days", price: 19.1, id: 2 },
-          { name: "USA | Canada 10 Days ", price: 23.2, id: 3 },
+          { name: "USA | Canada 10 Days", price: 23.2, id: 3 },
           { name: "USA | Canada 15 Days", price: 24.8, id: 4 },
           { name: "USA | Canada 20 Days", price: 32.6, id: 5 },
           { name: "USA | Canada 30 Days", price: 46.2, id: 6 },
@@ -283,7 +283,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "Australia 5 Days", price: 8.2, id: 1 },
           { name: "Australia 7 Days", price: 10.2, id: 2 },
-          { name: "Australia 10 Days ", price: 12.7, id: 3 },
+          { name: "Australia 10 Days", price: 12.7, id: 3 },
           { name: "Australia 15 Days", price: 19.7, id: 4 },
           { name: "Australia 20 Days", price: 26.9, id: 5 },
         ],
@@ -297,7 +297,7 @@ export const packagesSlice = createSlice({
         package: [
           { name: "New Zealand 5 Days", price: 10.8, id: 1 },
           { name: "New Zealand 7 Days", price: 13.4, id: 2 },
-          { name: "New Zealand 10 Days ", price: 16.1, id: 3 },
+          { name: "New Zealand 10 Days", price: 16.1, id: 3 },
           { name: "New Zealand 15 Days", price: 24.1, id: 4 },
           { name: "New Zealand 20 Days", price: 32.3, id: 5 },
         ],
@@ -433,14 +433,14 @@ export const packagesSlice = createSlice({
       region: "Asia",
       country: "South Korea",
       package: [
-        { name: "South Korea 3 Days ", price: 4.1, id: 1 },
-        { name: "South Korea 5 ", price: 6.5, id: 2 },
-        { name: "South Korea 7 Days ", price: 8.9, id: 3 },
-        { name: "South Korea 8 Days ", price: 10.2, id: 4 },
-        { name: "South Korea 10 Days ", price: 12.5, id: 5 },
-        { name: "South Korea 12 Days ", price: 14.8, id: 6 },
-        { name: "South Korea 15 Days ", price: 18.1, id: 7 },
-        { name: "South Korea 20 Days ", price: 23.0, id: 8 },
+        { name: "South Korea 3 Days", price: 4.1, id: 1 },
+        { name: "South Korea 5", price: 6.5, id: 2 },
+        { name: "South Korea 7 Days", price: 8.9, id: 3 },
+        { name: "South Korea 8 Days", price: 10.2, id: 4 },
+        { name: "South Korea 10 Days", price: 12.5, id: 5 },
+        { name: "South Korea 12 Days", price: 14.8, id: 6 },
+        { name: "South Korea 15 Days", price: 18.1, id: 7 },
+        { name: "South Korea 20 Days", price: 23.0, id: 8 },
         { name: "South Korea 30 Days", price: 34.6, id: 9 },
       ],
       remarks: "Unlimited Data Package",
@@ -470,7 +470,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Malaysia 3 Days", price: 2.8, id: 1 },
         { name: "Malaysia 4 Days", price: 3.2, id: 2 },
-        { name: "Malaysia 5 Days ", price: 4.1, id: 3 },
+        { name: "Malaysia 5 Days", price: 4.1, id: 3 },
         { name: "Malaysia 6 Days", price: 4.8, id: 4 },
         { name: "Malaysia 7 Days", price: 5.8, id: 5 },
         { name: "Malaysia 10 Days", price: 8.0, id: 6 },
@@ -486,7 +486,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Thailand 3 Days", price: 2.8, id: 1 },
         { name: "Thailand 4 Days", price: 3.2, id: 2 },
-        { name: "Thailand 5 Days ", price: 3.8, id: 3 },
+        { name: "Thailand 5 Days", price: 3.8, id: 3 },
         { name: "Thailand 6 Days", price: 4.3, id: 4 },
         { name: "Thailand 7 Days", price: 4.7, id: 5 },
         { name: "Thailand 10 Days", price: 6.4, id: 6 },
@@ -502,7 +502,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Singapore/Malaysia/Thailand 3 Days", price: 3.0, id: 1 },
         { name: "Singapore/Malaysia/Thailand 4 Days", price: 3.6, id: 2 },
-        { name: "Singapore/Malaysia/Thailand 5 Days ", price: 4.7, id: 3 },
+        { name: "Singapore/Malaysia/Thailand 5 Days", price: 4.7, id: 3 },
         { name: "Singapore/Malaysia/Thailand 6 Days", price: 5.5, id: 4 },
         { name: "Singapore/Malaysia/Thailand 7 Days", price: 6.5, id: 5 },
         { name: "Singapore/Malaysia/Thailand 10 Days", price: 9.0, id: 6 },
@@ -517,7 +517,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Myanmar 3 Days", price: 7.6, id: 1 },
         { name: "Myanmar 4 Days", price: 9.5, id: 2 },
-        { name: "Myanmar 5 Days ", price: 10.9, id: 3 },
+        { name: "Myanmar 5 Days", price: 10.9, id: 3 },
         { name: "Myanmar 6 Days", price: 12.0, id: 4 },
         { name: "Myanmar 7 Days", price: 12.7, id: 5 },
         { name: "Myanmar 10 Days", price: 17.3, id: 6 },
@@ -531,7 +531,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Indonesia 3 Days", price: 4.1, id: 1 },
         { name: "Indonesia 4 Days", price: 4.8, id: 2 },
-        { name: "Indonesia 5 Days ", price: 5.4, id: 3 },
+        { name: "Indonesia 5 Days", price: 5.4, id: 3 },
         { name: "Indonesia 6 Days", price: 6.5, id: 4 },
         { name: "Indonesia 7 Days", price: 7.6, id: 5 },
         { name: "Indonesia 10 Days", price: 10.8, id: 6 },
@@ -545,7 +545,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Vietnam 3 Days", price: 2.9, id: 1 },
         { name: "Vietnam 4 Days", price: 3.2, id: 2 },
-        { name: "Vietnam 5 Days ", price: 4.1, id: 3 },
+        { name: "Vietnam 5 Days", price: 4.1, id: 3 },
         { name: "Vietnam 6 Days", price: 4.8, id: 4 },
         { name: "Vietnam 7 Days", price: 5.8, id: 5 },
         { name: "Vietnam 10 Days", price: 8.0, id: 6 },
@@ -560,7 +560,7 @@ export const packagesSlice = createSlice({
       package: [
         { name: "Cambodia 3 Days", price: 4.2, id: 1 },
         { name: "Cambodia 4 Days", price: 5.5, id: 2 },
-        { name: "Cambodia 5 Days ", price: 6.6, id: 3 },
+        { name: "Cambodia 5 Days", price: 6.6, id: 3 },
         { name: "Cambodia 6 Days", price: 7.9, id: 4 },
         { name: "Cambodia 7 Days", price: 9.2, id: 5 },
         { name: "Cambodia 10 Days", price: 13.2, id: 6 },
