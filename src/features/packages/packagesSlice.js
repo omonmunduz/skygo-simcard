@@ -185,7 +185,7 @@ export const packagesSlice = createSlice({
           { name: "Myanmar 7 Days", price: 12.7, id: 5 },
           { name: "Myanmar 10 Days", price: 17.3, id: 6 },
         ],
-
+        remarks: 'Unlimited Data(500MB/day high speed)'
       },
       {
         id: 13,
@@ -199,7 +199,7 @@ export const packagesSlice = createSlice({
           { name: "Indonesia 7 Days", price: 7.6, id: 5 },
           { name: "Indonesia 10 Days", price: 10.8, id: 6 },
         ],
-
+        remarks: 'Unlimited Data(500MB/day high speed)'
       },
       {
         id: 14,
@@ -522,7 +522,7 @@ export const packagesSlice = createSlice({
         { name: "Myanmar 7 Days", price: 12.7, id: 5 },
         { name: "Myanmar 10 Days", price: 17.3, id: 6 },
       ],
-
+      remarks: 'Unlimited Data(500MB/day high speed)'
     },
     {
       id: 13,
@@ -536,7 +536,7 @@ export const packagesSlice = createSlice({
         { name: "Indonesia 7 Days", price: 7.6, id: 5 },
         { name: "Indonesia 10 Days", price: 10.8, id: 6 },
       ],
-
+      remarks: 'Unlimited Data(500MB/day high speed)'
     },
     {
       id: 14,
@@ -565,7 +565,7 @@ export const packagesSlice = createSlice({
         { name: "Cambodia 7 Days", price: 9.2, id: 5 },
         { name: "Cambodia 10 Days", price: 13.2, id: 6 },
       ],
-     
+      remarks: 'Unlimited Data(500MB/day high speed)'
     }],
     chosenPackage:'',
     totalPrice: 0,
