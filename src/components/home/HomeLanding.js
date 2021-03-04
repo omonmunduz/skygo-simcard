@@ -17,8 +17,9 @@ const HomeLanding = () => {
                  consectetur adipiscing elit. Duis finibus at tellus vel ullamcorper. 
                  Maecenas vulputate ut diam ac cursus. Class aptent taciti sociosqu ad litora
                   torquent per conubia nostra, per inceptos himenaeos. Sed tellus arcu, porta sed consectetur ut,
-                   interdum at lacus<Link to="/add-sim"> Add SIM</Link></p>
+                   interdum at lacusAdd SIM</p>
             </div>
+            <Link to="/add-sim" className="learn-more">Learn more about how to ADD SIM</Link>
         </div>
         <div className="intro-box">
         <span className="order">1</span>
@@ -29,9 +30,10 @@ const HomeLanding = () => {
                  page where you can select you region
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                  Duis finibus at tellus vel ullamcorper. Maecenas vulputate ut diam ac cursus. 
-                 Class aptent taciti sociosqu ad litora torquent per conubia <Link to="/store">Store</Link>
+                 Class aptent taciti sociosqu ad litora torquent per conubia Store
                    </p>
             </div>
+            <Link to="/store" className="learn-more">Learn more about covered countries</Link>
         </div>
         <div className="intro-box">
         <span className="order">3</span><img src={choose} alt="Choose" className="intro-box-img"/>
@@ -42,6 +44,7 @@ const HomeLanding = () => {
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                 Sed tellus arcu, porta sed consectetur ut, interdum at lacus</p>
             </div>
+            <Link to="/how-to" className="learn-more">Learn more about data pacakges</Link>
         </div>
         <div className="intro-box">
         <span className="order">4</span><img src={paymentss} alt="Payments" className="intro-box-img"/>
@@ -52,7 +55,8 @@ const HomeLanding = () => {
                 Maecenas vulputate ut diam ac cursus. Class aptent taciti sociosqu ad 
                 litora torquent per conubia nostra, per inceptos himenaeos. 
                 Sed tellus arcu, porta sed consectetur ut, interdum at lacus</p>
-            </div>
+        </div>
+        <Link to="faq" className="learn-more">Learn more about payments</Link>
         </div>
     </section>
 };
