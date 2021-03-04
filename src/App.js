@@ -13,6 +13,7 @@ import Usage from "./pages/usage/Usage";
 import Privacy from "./pages/privacy/Privacy";
 import SelectedCountry from './pages/selectedCountry/SelectedCountry';
 import SelectedPackage from './pages/selectedPackage/SelectedPackage';
+import Contact from './pages/contact/Contact';
 import Footer from "./components/shared/Footer";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Terms path="/terms-and-conditions" />
         <Usage path="/usage-policy" />
         <Privacy path="/privacy-policy" />
+        <Contact path="/contact-us" />
         <SelectedCountry path="/store/:countryName" />
         <SelectedPackage path="/store/:countryName/:selectedPackage" />
       </Router>

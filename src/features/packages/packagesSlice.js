@@ -568,8 +568,6 @@ export const packagesSlice = createSlice({
       remarks: 'Unlimited Data(500MB/day high speed)'
     }],
     chosenPackage:'',
-    totalPrice: 0,
-    quantity: 1
   },
   reducers: {
     selectRegion: (state, action) => {
